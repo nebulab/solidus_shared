@@ -10,7 +10,7 @@ end
 # switch apartment adapter directory to dummy app
 Thread.current[:apartment_adapter].instance_variable_set("@default_dir", File.expand_path("../dummy/db",  __FILE__))
 
-require 'spree_shared'
+require 'solidus_shared'
 require 'rspec/rails'
 require 'apartment'
 

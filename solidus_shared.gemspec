@@ -6,7 +6,7 @@ require 'spree_shared/version'
 
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_shared'
+  s.name        = 'solidus_shared'
   s.version     = SpreeShared.version
   s.summary     = 'Adds multi-tenancy to a Spree application.'
   s.description = 'Adds multi-tenancy to a Spree application using the Apartment gem.'
@@ -23,8 +23,8 @@ Gem::Specification.new do |s|
   s.has_rdoc = false
 
 
-  s.add_runtime_dependency 'spree_core', '~> 3.1.0.beta'
-  s.add_runtime_dependency 'spree_sample', '~> 3.1.0.beta'
+  s.add_runtime_dependency 'solidus_core', '~> 1.1'
+  s.add_runtime_dependency 'solidus_sample', '~> 1.1'
   s.add_runtime_dependency 'apartment', '~> 0.26.1'
 
   s.add_development_dependency 'rspec-rails'

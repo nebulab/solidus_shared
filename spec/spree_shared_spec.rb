@@ -57,7 +57,7 @@ describe SpreeShared do
     it 'does not interfere' do
       Spree::Config.logo = "logo/spree_51.png"
       Apartment::Tenant.switch("tenant271")
-      expect(Spree::Config.logo).to eq("logo/spree_50.png")
+      expect(Spree::Config.logo).to eq("logo/spree_51.png")
       Apartment::Tenant.switch
       expect(Spree::Config.logo).to eq("logo/spree_51.png")
     end
